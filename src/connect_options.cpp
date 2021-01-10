@@ -135,8 +135,8 @@ void connect_options::update_c_struct()
 
 	// HTTP & Proxy
 
-	opts_.httpProxy = c_str(httpProxy_);
-	opts_.httpsProxy = c_str(httpsProxy_);
+	//opts_.httpProxy = c_str(httpProxy_);
+	//opts_.httpsProxy = c_str(httpsProxy_);
 }
 
 connect_options& connect_options::operator=(const connect_options& opt)
@@ -294,13 +294,13 @@ void connect_options::set_automatic_reconnect(int minRetryInterval,
 void connect_options::set_http_proxy(const string& httpProxy)
 {
 	httpProxy_ = httpProxy;
-	opts_.httpProxy = c_str(httpProxy_);
+	//opts_.httpProxy = c_str(httpProxy_);
 }
 
 void connect_options::set_https_proxy(const string& httpsProxy)
 {
 	httpsProxy_ = httpsProxy;
-	opts_.httpsProxy = c_str(httpsProxy_);
+	//opts_.httpsProxy = c_str(httpsProxy_);
 }
 
 /////////////////////////////////////////////////////////////////////////////
